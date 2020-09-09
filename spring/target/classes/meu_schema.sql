@@ -1,0 +1,11 @@
+create database dcliente;
+
+use dcliente;
+
+CREATE TABLE cliente (
+    ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+    CPF VARCHAR(11) UNIQUE NOT NULL,
+    NOME VARCHAR(100),
+    DATA_NASCIMENTO TIMESTAMP,
+    STATUS VARCHAR(20)
+);
